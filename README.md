@@ -2,14 +2,14 @@
 This file is an QA for controlling the Broadlink RM4 Pro QA.
 
 1. first download Broadlink RM4 Pro QA, see below.
-2. Install this QA
+2. Install this QA - i Updated the test file from Darren_Teh https://forum.fibaro.com/topic/50287-hc3-broadlink-hub-with-support-rm4/?do=findComment&comment=226593
 3. learn the Ir/Rf Codes - with https://github.com/t0mer/broadlinkmanager-docker (former versions will NOT WORK with RM4 Pro)
 4. Or Use Home Assistant, Developer tools, Services to learn the codes.
     My services looked like this
     
     service: remote.learn_command
-data:
-  device: GardinChannel_01
+    data:
+ device: GardinChannel_01
   command: opper
   command_type: rf
 target:
